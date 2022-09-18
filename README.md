@@ -1,1 +1,3 @@
 # SocietyManagementSystem
+
+-Open master branch
