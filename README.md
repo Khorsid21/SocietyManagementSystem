@@ -1,0 +1,2 @@
+- Host server
+- Upload all PHP files there
