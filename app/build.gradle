@@ -1,0 +1,121 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 33
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.example.societymanagmentsystem"
+        minSdkVersion 23
+        targetSdkVersion 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    packagingOptions {
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility "1.8"
+        targetCompatibility "1.8"
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'com.google.gms.google-services'
+
+
+dependencies {
+
+    //noinspection GradleCompatible
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //noinspection GradleCompatible
+
+    implementation 'com.karumi:dexter:6.2.2'
+    implementation 'net.gotev:uploadservice:2.1'
+    //implementation 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.browser:browser:1.4.0'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-auth:21.0.8'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    implementation 'com.google.firebase:firebase-analytics'
+
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    //annotationProcessor 'androidx.annotation:annotation:1.1.0'
+    implementation platform('com.google.firebase:firebase-bom:26.3.0')
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    //Image COmpression
+    implementation 'id.zelory:compressor:1.0.4'
+
+    //implementation 'com.android.support.cardview-v7:25.3.1'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+
+
+    /*implementation ("com.github.bumptech.glide:glide:4.11.0") {
+        exclude group: "com.android.support"
+    }
+    implementation ("com.github.bumptech.glide:glide:4.11.0@aar") {
+        transitive = true
+    }*/
+
+    //Image
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    //Alert Box
+    implementation 'com.github.TutorialsAndroid:KAlertDialog:v14.0.19'
+    implementation 'com.github.salehyarahmadi:AndExAlertDialog:v1.0.1'
+
+
+    //Twillo
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation group: 'cz.msebera.android' , name: 'httpclient', version: '4.4.1.1'
+    //
+
+    //Image SHow pop up
+    implementation 'com.github.chrisbanes.photoview:library:1.2.4'
+    //
+    //ImageSLiderLibrary
+    implementation 'com.github.denzcoskun:ImageSlideshow:0.1.0'
+
+    //FOr Circle Image View
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //Worker's View Pager
+    implementation 'com.tbuonomo:creative-viewpager:1.0.1'
+    implementation "androidx.core:core-ktx:1.9.0"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.0"
+
+    implementation 'com.ramotion.foldingcell:folding-cell:1.2.3'
+    implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
+
+    //Image Download Lib
+    implementation 'com.amitshekhar.android:android-networking:1.0.0'
+
+
+
+
+}
+repositories {
+    mavenCentral()
+}

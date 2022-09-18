@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+
+        <com.ramotion.foldingcell.FoldingCell
+            android:id="@+id/folding_cell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="96dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/glass" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/photo"
+                        android:layout_width="112dp"
+                        android:layout_height="112dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/example_img"
+                        app:civ_border_color="@android:color/white"
+                        app:civ_border_width="2dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="38dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tvWorkerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:textSize="25dp"
+
+                        android:layout_toRightOf="@id/photo"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="105dp"
+                        android:text="Worker Name"
+                        android:textColor="@color/md_black_1000"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tvWorkerType"
+                        android:textSize="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_below="@id/tvWorkerName"
+                        android:layout_marginStart="10dp"
+                        android:text="Driver"
+                        android:layout_toRightOf="@id/photo"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tvWorkerEmail"
+                        android:textSize="18dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_below="@id/tvWorkerType"
+                        android:layout_marginStart="5dp"
+                        android:text="Email :"
+                        android:paddingStart="16dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tvWorkerEm"
+                        android:textSize="18dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_below="@id/tvWorkerType"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Email :"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:layout_alignParentEnd="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/md_black_1000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_below="@id/tvWorkerEmail"
+                        android:layout_marginStart="5dp"
+                        android:text="Speciality :"
+                        android:paddingStart="16dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tvWorkerSpeciality"
+                        android:textSize="18dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_below="@id/tvWorkerEm"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Speciality"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:layout_alignParentEnd="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/md_black_1000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_below="@id/tvWorkerSpeciality"
+                        android:layout_marginStart="5dp"
+                        android:text="PhoneNo :"
+                        android:paddingStart="16dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tvWorkerNumber"
+                        android:textSize="18dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_below="@id/tvWorkerSpeciality"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:text="8446613467"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:layout_alignParentEnd="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/md_black_1000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_below="@id/tvWorkerNumber"
+                        android:layout_marginStart="5dp"
+                        android:text="Address :"
+                        android:paddingStart="16dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tvWorkerAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvWorkerNumber"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="7dp"
+                        android:layout_marginBottom="12dp"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="Hadapsar"
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    android:layout_marginBottom="-5dp"
+                    android:background="@drawable/card_bg">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/custom_prof_worker"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/example_img"
+                        android:layout_marginStart="10dp" />
+
+                    <TextView
+                        android:id="@+id/custom_name_worker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_toRightOf="@id/custom_prof_worker"
+                        android:text="Item - 1"
+                        android:textSize="20dp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/custom_type_worker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/custom_name_worker"
+                        android:layout_marginLeft="5dp"
+
+                        android:textSize="15dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_toRightOf="@id/custom_prof_worker"
+                        android:text="Description"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/custom_type_worker"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_toRightOf="@id/custom_prof_worker"
+                        android:background="#0C5ED1"
+                        android:paddingLeft="15dp"
+                        android:textSize="12dp"
+                        android:layout_marginStart="12dp"
+                        android:paddingRight="15dp"
+                        android:text="Rating Coming Soon"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/custom_callingbtn_worker"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/ic_call_blue_24dp"
+                        android:padding="7dp" />
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+        </com.ramotion.foldingcell.FoldingCell>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

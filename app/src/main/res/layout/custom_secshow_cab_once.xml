@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+
+        <com.ramotion.foldingcell.FoldingCell
+            android:id="@+id/folding_cell_cab_once_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                >
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="96dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/glass" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/secOUpic"
+                        android:layout_width="112dp"
+                        android:layout_height="112dp"
+                        android:layout_marginEnd="8dp"
+
+
+                        android:src="@drawable/example_img"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="38dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/sectvUName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:textSize="25dp"
+
+                        android:layout_toRightOf="@id/secOUpic"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="105dp"
+                        android:text="Worker Name"
+                        android:textColor="@color/md_black_1000"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/sectvUMob1"
+                        android:textSize="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_below="@id/sectvUName"
+                        android:layout_marginStart="10dp"
+                        android:text="Mobile No"
+                        android:layout_toRightOf="@id/secOUpic"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tvWorkerEmail"
+                        android:textSize="18dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_below="@id/sectvUMob1"
+                        android:layout_marginStart="5dp"
+                        android:text="Email :"
+                        android:paddingStart="16dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/sectvUemail"
+                        android:textSize="18dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_below="@id/sectvUMob1"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Email :"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:layout_alignParentEnd="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/md_black_1000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_below="@id/tvWorkerEmail"
+                        android:layout_marginStart="5dp"
+                        android:text="City :"
+                        android:paddingStart="16dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/sectvUcity"
+                        android:textSize="18dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_below="@id/sectvUemail"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Speciality"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:layout_alignParentEnd="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/md_black_1000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_below="@id/sectvUcity"
+                        android:layout_marginStart="5dp"
+                        android:text="Society Name :"
+                        android:paddingStart="16dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/sectvUsocname"
+                        android:textSize="18dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_below="@id/sectvUcity"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:text="8446613467"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:layout_alignParentEnd="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/md_black_1000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_below="@id/sectvUsocname"
+                        android:layout_marginStart="5dp"
+                        android:text="Block :"
+                        android:id="@+id/blcoktv"
+                        android:paddingStart="16dp"
+                        android:textStyle="bold"
+
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/sectvUblock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sectvUsocname"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="7dp"
+
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="Hadapsar"
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/blcoktv"
+                        android:layout_marginStart="5dp"
+                        android:id="@+id/tvadate"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="16dp"
+                        android:text="Ariving Date :"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sectvUdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sectvUblock"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="7dp"
+
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="Date"
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvvehtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvadate"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="16dp"
+                        android:text="Start Time :"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sectvUtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sectvUdate"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="7dp"
+
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="Time"
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvvehno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvvehtime"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="16dp"
+                        android:text="Vehicle No :"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sectvUvehno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sectvUtime"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="7dp"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="Veh No"
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvvalidfor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvvehno"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="16dp"
+                        android:text="Valid For  :"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sectvUvalidfor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sectvUvehno"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="7dp"
+                        android:layout_marginBottom="12dp"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="Validity"
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvvalidfor"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingStart="16dp"
+                        android:layout_marginEnd="7dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/sectvOStatus"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FF0000"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:text="Status"
+                            android:gravity="center"
+
+                            />
+
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_width="35dp"
+                            android:id="@+id/secAllowCabBtn"
+                            android:layout_gravity="center"
+                            android:layout_height="35dp"
+                            android:src="@drawable/check"
+                            />
+
+                        <ImageView
+                            android:id="@+id/secDenyCabBtn"
+                            android:layout_weight="1"
+                            android:layout_width="35dp"
+                            android:layout_gravity="center"
+                            android:layout_height="35dp"
+                            android:src="@drawable/wrong"
+                            />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    android:layout_marginBottom="-5dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/sec_custom_uprof"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/example_img" />
+
+                    <TextView
+                        android:id="@+id/sec_custom_Uname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_toRightOf="@id/sec_custom_uprof"
+                        android:text="Name"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/sec_custom_Utype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sec_custom_Uname"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/sec_custom_uprof"
+                        android:text="Mobile No"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sec_custom_UTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sec_custom_Utype"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_toRightOf="@id/sec_custom_uprof"
+                        android:text="Vehicle No : "
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sec_custom_UVehno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginTop="64dp"
+                        android:layout_toEndOf="@+id/sec_custom_UTime"
+                        android:layout_toRightOf="@id/sec_custom_UTime"
+                        android:text="Veh No"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/custom_deletebtn_worker"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/ic_baseline_delete_forever_24"
+                        android:padding="7dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/sec_Ustatus"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/pending"
+                        android:text="Veh No"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </FrameLayout>
+        </com.ramotion.foldingcell.FoldingCell>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

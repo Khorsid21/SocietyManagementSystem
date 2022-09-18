@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/white"
+        app:strokeColor="#000000"
+        app:strokeWidth="1dp"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="0dp"
+        card_view:cardUseCompatPadding="false" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="ABCD"
+                android:textSize="20sp"
+                android:id="@+id/HeadingTitle"
+                android:textStyle="bold|italic"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City :"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"
+                />
+
+            <EditText
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/editcity"
+                android:hint="Enter City Name ..."
+                android:layout_width="match_parent"
+                android:textColor="#000000"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+
+                />
+        </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Society :"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="20sp"
+                    />
+
+                <EditText
+                    android:hint="Enter Society Name ..."
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/editsoc"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Block :"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="20sp"
+                    />
+
+                <EditText
+                    android:hint="Enter Block/Wing No ..."
+                    android:layout_marginLeft="10dp"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/editblock"
+                    android:layout_marginTop="10dp"
+                    android:maxLength="10"
+                    android:layout_width="match_parent"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:id="@+id/EditDone"
+                android:layout_marginTop="15dp"
+                app:strokeWidth="2dp"
+                card_view:cardCornerRadius="10dp"
+                app:strokeColor="#FFE75370"
+
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/check"
+                    />
+
+            </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/EditCancel"
+                    android:layout_weight="1"
+                    android:layout_marginTop="15dp"
+                    app:strokeWidth="2dp"
+                    card_view:cardCornerRadius="10dp"
+                    app:strokeColor="#FFE75370"
+
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/wrong"
+                        />
+
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/building"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

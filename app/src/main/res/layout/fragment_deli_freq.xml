@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textSize="18sp"
+        android:id="@+id/ftvselday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Select Days of Week"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:textSize="18sp"
+        android:id="@+id/ftvselVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"
+        android:text="Select Validity"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/fdselDayBtn" />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/fdselDayBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/cardview_border"
+        android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+        android:text="Days"
+        android:theme="@style/ButtonStyleTemp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/ftvselVal"
+        app:layout_constraintTop_toBottomOf="@+id/ftvselday" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fdselValBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/cardview_border"
+        android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+        android:text="Validity"
+        android:theme="@style/ButtonStyleTemp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ftvselVal" />
+
+    <TextView
+        android:textColor="#000000"
+        android:id="@+id/valid_for12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="23dp"
+        android:textSize="18sp"
+        android:text="Select Allowed Time Slot"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fdselValBtn" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/freqdSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/cardview_border"
+        android:text="Submit"
+        android:textAlignment="center"
+        android:theme="@style/ButtonStyleTemp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/fdentimeBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="355dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fdsttimeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/cardview_border"
+        android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+        android:text="Start Time"
+        android:theme="@style/ButtonStyleTemp"
+        app:layout_constraintTop_toBottomOf="@id/valid_for12"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fdentimeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/cardview_border"
+        android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+        android:text="End Time"
+        android:theme="@style/ButtonStyleTemp"
+        app:layout_constraintLeft_toRightOf="@id/fdsttimeBtn"
+        app:layout_constraintTop_toBottomOf="@id/valid_for12" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNotice">
+
+
+    <EditText
+        android:id="@+id/noticetitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Notice Title"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/noticetypespinner"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/noticetitle"
+        />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/noticeUserspinner"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/noticetypespinner"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:id="@+id/textfragment"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/noticeUserspinner"
+        android:layout_height="wrap_content">
+
+        <EditText
+
+            android:id="@+id/noticedesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Notice Description Here..."
+            android:maxLines="10"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="@id/textfragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".50"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/imagetextfragment"
+        android:visibility="gone"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/noticeUserspinner"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scrollbars="vertical"
+            android:ems="10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/imagetextfragment"
+            app:layout_constraintBottom_toBottomOf="@id/imagetextfragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHeight_percent=".30"
+            android:id="@+id/imagetextfragmentnoticedesc"
+            android:maxLines="6"
+            android:hint="Enter Notice Description Here..."
+            />
+
+        <ImageView
+            android:layout_height="0dp"
+            app:layout_constraintVertical_bias="1"
+            app:layout_constraintHeight_percent=".65"
+            android:layout_width="match_parent"
+            android:id="@+id/imagetextfragmentimage"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="@id/imagetextfragment"
+            app:layout_constraintBottom_toBottomOf="@id/imagetextfragment"
+            android:background="#E4E4E4"
+            android:clickable="true"
+            android:src="@drawable/uploadimg"
+            app:layout_constraintTop_toBottomOf="@id/imagetextfragmentnoticedesc"
+            app:layout_constraintEnd_toEndOf="@id/imagetextfragment"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:id="@+id/imagefragment"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/noticeUserspinner"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:background="#E4E4E4"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="@id/imagefragment"
+            app:layout_constraintBottom_toBottomOf="@id/imagefragment"
+            android:id="@+id/imagefragmentimg"
+            android:clickable="true"
+            app:layout_constraintTop_toTopOf="@id/imagefragment"
+            app:layout_constraintEnd_toEndOf="@id/imagefragment"
+            android:src="@drawable/uploadimg"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="15dp"
+        android:text="Submit"
+        android:id="@+id/submitnotice"
+        android:background="@drawable/cardview_border"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

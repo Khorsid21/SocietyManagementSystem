@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/mem_nav_home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+
+    </group>
+
+    <item android:title="Profile">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/mem_nav_profile"
+                    android:icon="@drawable/account"
+                    android:title="Profile" />
+
+                <item
+                    android:id="@+id/mem_nav_logout"
+                    android:icon="@drawable/logout"
+                    android:title="Logout" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Services">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+
+                <item
+                    android:id="@+id/mem_nav_emgncyno"
+                    android:icon="@drawable/emergency"
+                    android:title="Emergency" />
+
+                <item
+                    android:id="@+id/mem_nav_vendorno"
+                    android:icon="@drawable/vendors"
+                    android:title="Workers" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/mem_nav_abtus"
+                android:icon="@drawable/about"
+                android:title="About Us" />
+
+            </group>
+        </menu>
+    </item>
+</menu>
+

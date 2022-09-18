@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Sorry !"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:layout_marginTop="20dp"
+        android:text="As Per Our T&amp;C Your Requet To Use This is App is Rejected &amp; Your Data is Deleted Along With Security."
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Please Try To Re-Sign Up this To Use This Our App.Thank You. "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

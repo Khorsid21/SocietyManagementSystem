@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/ll2"
+    android:background="@drawable/bottom_sheet_layout"
+    >
+
+    <View
+        android:layout_marginTop="7dp"
+        android:layout_width="43dp"
+        android:layout_height="3dp"
+        android:layout_gravity="center"
+        android:background="#000000"
+
+        />
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:theme="@style/ButtonStlye123"
+            android:background="@drawable/valid_btn_theme"
+            android:textSize="12sp"
+            android:text="1 hour"
+            android:id="@+id/valid1hr"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/valid_btn_theme"
+            android:theme="@style/ButtonStlye123"
+            android:id="@+id/valid2hr"
+            android:textSize="12sp"
+            android:text="2 Hour"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/valid_btn_theme"
+            android:id="@+id/valid4hr"
+            android:theme="@style/ButtonStlye123"
+            android:text="4 Hour"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_margin="5dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/valid_btn_theme"
+            android:id="@+id/valid8hr"
+            android:theme="@style/ButtonStlye123"
+            android:text="8 Hour"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/valid_btn_theme"
+            android:id="@+id/valid12hr"
+            android:theme="@style/ButtonStlye123"
+            android:text="12 Hour"
+            android:textSize="12sp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/valid_btn_theme"
+            android:id="@+id/valid24hr"
+            android:theme="@style/ButtonStlye123"
+            android:textSize="12sp"
+            android:text="24 Hour"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

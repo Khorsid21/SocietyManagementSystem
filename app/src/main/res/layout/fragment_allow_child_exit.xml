@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/white"
+            app:strokeColor="#000000"
+            app:strokeWidth="1dp"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="0dp"
+            card_view:cardUseCompatPadding="false" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="50dp"
+                android:padding="24dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:text="Allow My Kid To Exit in Next"
+                    android:hint="Login"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ACESelTimeBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/cardview_border"
+                    android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+                    android:text="Time"
+                    android:theme="@style/ButtonStyleTemp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/oStartTime" />
+
+                <EditText
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                    android:id="@+id/ALEParentName"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:textColor="#FFE75370"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Full Name Of Child"
+                    />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:id="@+id/ACESubmit"
+                    android:layout_marginTop="15dp"
+                    app:strokeWidth="2dp"
+                    card_view:cardCornerRadius="10dp"
+                    app:strokeColor="#FFE75370"
+
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/check"
+                    />
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/baby_boy"
+            android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

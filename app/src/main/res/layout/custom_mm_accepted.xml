@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/white"
+    app:strokeColor="#000000"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    app:strokeWidth="1dp"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardElevation="0dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+
+        <com.ramotion.foldingcell.FoldingCell
+            android:id="@+id/folding_cell_mma_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                >
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="96dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/glass" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/mmaUpic"
+                        android:layout_width="112dp"
+                        android:layout_height="112dp"
+                        android:layout_marginEnd="8dp"
+
+
+                        android:src="@drawable/example_img"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="38dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/mmaUName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:textSize="25dp"
+
+                        android:layout_toRightOf="@id/mmaUpic"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="105dp"
+                        android:text="Worker Name"
+                        android:textColor="@color/md_black_1000"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/mmaUMob1"
+                        android:textSize="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_below="@id/mmaUName"
+                        android:layout_marginStart="10dp"
+                        android:text="Mobile No"
+                        android:layout_toRightOf="@id/mmaUpic"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tvWorkerEmail"
+                        android:textSize="18dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_below="@id/mmaUMob1"
+                        android:layout_marginStart="5dp"
+                        android:text="Email :"
+                        android:paddingStart="16dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/mmaUemail"
+                        android:textSize="18dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_below="@id/mmaUMob1"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Email :"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:layout_alignParentEnd="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/md_black_1000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_below="@id/tvWorkerEmail"
+                        android:layout_marginStart="5dp"
+                        android:text="City :"
+                        android:paddingStart="16dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/mmaUcity"
+                        android:textSize="18dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_below="@id/mmaUemail"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Speciality"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:layout_alignParentEnd="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/md_black_1000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_below="@id/mmaUcity"
+                        android:layout_marginStart="5dp"
+                        android:text="Society Name :"
+                        android:paddingStart="16dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/mmaUsocname"
+                        android:textSize="18dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_below="@id/mmaUcity"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:text="8446613467"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:layout_alignParentEnd="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/md_black_1000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_below="@id/mmaUsocname"
+                        android:layout_marginStart="5dp"
+                        android:text="Block :"
+                        android:id="@+id/mmablcoktv"
+                        android:paddingStart="16dp"
+                        android:textStyle="bold"
+
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/mmaUblock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mmaUsocname"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="7dp"
+
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="Hadapsar"
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mmablcoktv"
+                        android:layout_marginStart="5dp"
+                        android:id="@+id/tvadate"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="16dp"
+                        android:text="Role :"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/mmaUrole"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mmaUblock"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="7dp"
+
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="Date"
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/mmatvvehtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvadate"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="16dp"
+                        android:text="Ownership :"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/mmaUown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mmaUrole"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="7dp"
+
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="Time"
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+
+
+                    <ImageView
+
+                        android:scaleType="centerCrop"
+                        android:id="@+id/mmaimage1"
+                        android:layout_width="247dp"
+                        android:layout_height="223dp"
+                        android:layout_below="@id/mmaUown"
+                        android:layout_alignParentStart="true"
+
+                        android:layout_alignParentEnd="true"
+
+
+                        android:layout_marginTop="12dp"
+
+
+                        android:foregroundGravity="center" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mmaimage1"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingStart="16dp"
+                        android:layout_marginEnd="7dp"
+                        >
+
+                        <TextView
+
+                            android:id="@+id/sectvOStatussd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#01C609"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:text="Approved"
+                            android:gravity="center"
+
+                            />
+
+                        <TextView
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            android:text="Approved"
+                            android:id="@+id/sectvOStatus"
+                            android:layout_weight="1"
+                            android:textColor="#01C609"
+                            android:layout_width="35dp"
+                            android:gravity="center"
+                            android:layout_height="35dp"
+
+                            />
+
+                        <ImageView
+                            android:visibility="gone"
+                            android:id="@+id/mmasecDenyCabBtn"
+                            android:layout_weight="1"
+                            android:layout_width="35dp"
+                            android:layout_gravity="center"
+                            android:layout_height="35dp"
+                            android:src="@drawable/ic_baseline_delete_forever"
+                            />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    android:layout_marginBottom="-5dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/mma_custom_uprof"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/example_img" />
+
+                    <TextView
+                        android:id="@+id/mma_Uname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_toRightOf="@id/mma_custom_uprof"
+                        android:text="Name"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/mma_Umob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mma_Uname"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/mma_custom_uprof"
+                        android:text="Mobile No"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sec_custom_UTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mma_Umob"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_toRightOf="@id/mma_custom_uprof"
+                        android:text="Email : "
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/mma_Uemail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginTop="64dp"
+                        android:layout_toEndOf="@+id/sec_custom_UTime"
+                        android:layout_toRightOf="@id/sec_custom_UTime"
+                        android:text="email"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/custom_deletebtn_worker"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/ic_baseline_delete_forever_24"
+                        android:padding="7dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/sec_Ustatus"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/accepted"
+                        android:text="Veh No"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </FrameLayout>
+        </com.ramotion.foldingcell.FoldingCell>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

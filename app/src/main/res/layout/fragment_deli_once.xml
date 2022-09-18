@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textSize="18sp"
+        android:id="@+id/oSelectDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Select Date"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:textSize="18sp"
+        android:id="@+id/oStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"
+        android:text="Start Time"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/oDeliSelDateBtn" />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/oDeliSelDateBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/cardview_border"
+        android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+        android:text="Date"
+        android:theme="@style/ButtonStyleTemp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/oStartTime"
+        app:layout_constraintTop_toBottomOf="@+id/oSelectDate" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/oDeliSelTimeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/cardview_border"
+        android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+        android:text="Time"
+        android:theme="@style/ButtonStyleTemp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/oStartTime" />
+
+    <TextView
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:id="@+id/oValidFor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="15dp"
+        android:text="Valid For "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/oStartTime"
+        app:layout_constraintTop_toBottomOf="@+id/oDeliSelDateBtn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/oDeliValBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/cardview_border"
+        android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+        android:text="valid"
+        android:theme="@style/ButtonStyleTemp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toEndOf="@+id/oDeliSelTimeBtn"
+        app:layout_constraintTop_toBottomOf="@+id/oValidFor" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/oDeliSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/cardview_border"
+        android:text="Submit"
+        android:textAlignment="center"
+        android:theme="@style/ButtonStyleTemp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/oDeliValBtn"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

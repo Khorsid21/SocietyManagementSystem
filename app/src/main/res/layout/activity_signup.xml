@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:background="@drawable/login_bg"
+    tools:context=".signup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:fontFamily="cursive"
+            android:text="Sign UP"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign UP"
+            android:textSize="32sp"
+            android:fontFamily="cursive"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"/>
+
+        <EditText
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:drawablePadding="10dp"
+            android:hint="Enter Name" />
+
+        <EditText
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawablePadding="10dp"
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="35dp"
+            android:hint="Enter Email" />
+
+        <EditText
+            android:drawableLeft="@drawable/ic_baseline_phone_24"
+            android:drawablePadding="10dp"
+            android:id="@+id/mobmno"
+            android:maxLength="10"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="35dp"
+            android:hint="Enter Mobile Number" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+
+            >
+
+            <Spinner
+                android:id="@+id/rolesignup"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="15dp"
+
+                />
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80sp"
+                    android:layout_weight="1"
+
+                    android:text="Admin"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:buttonTint="#0040FF" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_weight="1"
+                    android:text="Society Member"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:buttonTint="#0040FF" />
+
+
+            </RadioGroup>
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/uloadImg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Upload Image"
+
+            />
+
+        <ImageView
+            android:id="@+id/UImg"
+            android:layout_width="350dp"
+            android:layout_height="270dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="20dp"
+             />
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:visibility="gone"
+            android:id="@+id/signotpnoll"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/UImg"
+
+            >
+
+            <EditText
+
+                android:id="@+id/eeotp1"
+                android:layout_width="41dp"
+                android:layout_height="45dp"
+                android:background="@drawable/edittext_border"
+                android:layout_gravity="fill_vertical"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/eeotp2"
+                android:layout_marginLeft="7dp"
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:background="@drawable/edittext_border"
+                android:layout_gravity="fill_vertical"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor"
+                />
+            <EditText
+                android:id="@+id/eeotp3"
+                android:layout_marginLeft="7dp"
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:background="@drawable/edittext_border"
+                android:layout_gravity="fill_vertical"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor"
+                />
+
+            <EditText
+                android:layout_marginLeft="7dp"
+                android:id="@+id/eeotp4"
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:background="@drawable/edittext_border"
+                android:layout_gravity="fill_vertical"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor"
+                />
+
+            <EditText
+                android:id="@+id/eeotp5"
+                android:layout_marginLeft="7dp"
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:background="@drawable/edittext_border"
+                android:layout_gravity="fill_vertical"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor"
+                />
+
+            <EditText
+                android:layout_marginLeft="7dp"
+                android:id="@+id/eeotp6"
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:background="@drawable/edittext_border"
+                android:layout_gravity="fill_vertical"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor"
+                />
+        </LinearLayout>
+
+        <EditText
+            android:drawableLeft="@drawable/otp_icon"
+            android:drawablePadding="10dp"
+            android:id="@+id/otpcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="35dp"
+            android:hint="Enter OTP Code"
+            android:visibility="gone"
+            />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginTop="0dp">
+
+            <Button
+                android:id="@+id/buttongetotp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:background="#008EFF"
+                android:text="Get OTP"
+                android:textColor="#FFFFFF"
+
+
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonverifyotp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:background="#008EFF"
+                android:text="Verify OTP"
+                android:textColor="#FFFFFF"
+
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/resendotp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginRight="30dp"
+                android:background="#008EFF"
+                android:text="Resend OTP"
+                android:textColor="#FFFFFF"
+
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:text="Already have an account?" />
+
+            <TextView
+                android:id="@+id/txtSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="6dp"
+                android:text="Sign in"
+                android:textColor="#9C09B6" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

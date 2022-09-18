@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">SocietyManagmentSystem</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string-array name="role">
+        <item>Please Select Role</item>
+        <item>Admin</item>
+        <item>Society Member</item>
+        <item>Security</item>
+
+    </string-array>
+
+    <string-array name="WorkerSpec">
+        <item>Choose Worker Type</item>
+        <item>Cook</item>
+        <item>Plumber</item>
+        <item>Electrician</item>
+        <item>Driver</item>
+
+    </string-array>
+
+    <string-array name="EmgnnoType">
+        <item>Choose Emergency Service</item>
+        <item>Police</item>
+        <item>Ambulance</item>
+        <item>Blood</item>
+        <item>Fire</item>
+        <item>Woman Safety</item>
+
+
+    </string-array>
+
+    <string-array name="gatepasstype">
+        <item>Please Select Gatepass Type</item>
+        <item>One Time Valid</item>
+        <item>Frequent Time Valid </item>
+
+    </string-array>
+
+    <string-array name="noticetype">
+        <item>Please Select Notice Type</item>
+        <item>Text Only</item>
+        <item>Image Only </item>
+        <item>Image + Text </item>
+    </string-array>
+
+    <string-array name="noticeuser">
+        <item>Please Select Whome To Inform</item>
+        <item>Society Members</item>
+        <item>Security </item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+</resources>

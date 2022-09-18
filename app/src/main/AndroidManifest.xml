@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.societymanagmentsystem">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SocietyManagmentSystem"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ShowSocietyNotice"></activity>
+        <activity android:name=".AddNotice" />
+        <activity android:name=".SecShowGatepass" />
+        <activity android:name=".Genpdf" />
+        <activity android:name=".ManageSoc" />
+        <activity android:name=".SecShowMembers" />
+        <activity android:name=".ManageUserMsg" />
+        <activity android:name=".ManageChildExit" />
+        <activity android:name=".AddEmgnNo" />
+        <activity android:name=".AddEmgnNoList" />
+        <activity android:name=".Emgn_no_list" />
+        <activity android:name=".ViewEmgNo" />
+        <activity android:name=".ManageMembers" />
+        <activity android:name=".SecShowDeli" />
+        <activity android:name=".AllowDelievery" />
+        <activity android:name=".SecShowCab" />
+        <activity android:name=".AllowCab" />
+        <activity android:name=".AddWorker" />
+        <activity android:name=".Add_Worker_List" />
+        <activity android:name=".Workers_List" />
+        <activity android:name=".viewii" />
+        <activity android:name=".temp" />
+        <activity android:name=".userprofile" />
+        <activity android:name=".NavBar" />
+        <activity android:name=".signup2" />
+        <activity android:name=".showdata" />
+        <activity android:name=".IntroActivity.IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".VerifyOTPActivity" />
+        <activity android:name=".signup" />
+        <activity android:name=".mainpage" />
+        <activity android:name=".login" />
+        <activity android:name=".Dashboard" />
+        <activity android:name=".Profile" />
+    </application>
+
+</manifest>

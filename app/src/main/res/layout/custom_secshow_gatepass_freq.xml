@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+
+        <com.ramotion.foldingcell.FoldingCell
+            android:id="@+id/folding_cell_cab_freq_list"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                >
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="96dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/glass" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/secfOUpic"
+                        android:layout_width="112dp"
+                        android:layout_height="112dp"
+                        android:layout_marginStart="20dp"
+
+
+                        android:layout_marginTop="38dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/example_img" />
+
+
+                    <TextView
+                        android:id="@+id/sec_gpf_tvUName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="105dp"
+
+                        android:layout_marginEnd="8dp"
+                        android:layout_toRightOf="@id/secfOUpic"
+                        android:text="Worker Name"
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sec_gpf_tvUMob1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sec_gpf_tvUName"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_toRightOf="@id/secfOUpic"
+
+                        android:text="Mobile No"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/tvWorkerEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sec_gpf_tvUMob1"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:paddingStart="16dp"
+                        android:visibility="gone"
+                        android:text="Email :"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/secftvUemail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sec_gpf_tvUMob1"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:visibility="gone"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="Email :"
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvWorkerEmail"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:paddingStart="16dp"
+                        android:visibility="gone"
+                        android:text="City :"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sec_gpf_tvUcity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/secftvUemail"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="9dp"
+                        android:paddingStart="16dp"
+                        android:visibility="gone"
+                        android:paddingEnd="16dp"
+                        android:text="Speciality"
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sec_gpf_tvUcity"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:paddingStart="16dp"
+                        android:text="Society Name :"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sec_gpf_tvUsocname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sec_gpf_tvUcity"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="8446613467"
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/blcoktv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sec_gpf_tvUsocname"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:paddingStart="16dp"
+
+                        android:text="Block :"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sec_gpf_tvUblock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sec_gpf_tvUsocname"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="7dp"
+
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="Hadapsar"
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvgp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/blcoktv"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:paddingStart="16dp"
+                        android:text="Gate Pass No :"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvadate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvgp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:paddingStart="16dp"
+                        android:text="Valid Period :"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sec_gpf_tvgatepass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sec_gpf_tvUblock"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="7dp"
+
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="Gate"
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sec_gpf_tvvalper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sec_gpf_tvgatepass"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="7dp"
+
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="Date"
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvvehtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvadate"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:paddingStart="16dp"
+                        android:text="Start Time :"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sec_gpf_tvUstime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sec_gpf_tvvalper"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="7dp"
+
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="Time"
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvvehno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvvehtime"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:paddingStart="16dp"
+                        android:text="End Time :"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sec_gpf_tvUetime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sec_gpf_tvUstime"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="7dp"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="end time"
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvvalidfor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvvehno"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:paddingStart="16dp"
+                        android:text="Days  :"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sec_gpf_tvUdays"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sec_gpf_tvUetime"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="7dp"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="Validity"
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sec_gpf_tvUdays"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="7dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        android:paddingStart="16dp">
+
+
+                        <TextView
+                            android:id="@+id/sec_gpf_tvOStatus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Status"
+                            android:textColor="#FF0000"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+
+                            />
+
+                        <ImageView
+
+                            android:id="@+id/secfAllowGPi"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:src="@drawable/check" />
+
+                        <ImageView
+
+                            android:id="@+id/secfDenyGP"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:src="@drawable/wrong" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    android:layout_marginBottom="-5dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/secf_custom_uprof"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/example_img" />
+
+                    <TextView
+                        android:id="@+id/sec_gpf_custom_Uname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_toRightOf="@id/secf_custom_uprof"
+                        android:text="Name"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/sec_gpf_custom_Utype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sec_gpf_custom_Uname"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/secf_custom_uprof"
+                        android:text="Mobile No"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/secf_custom_UsTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sec_gpf_custom_Utype"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_toRightOf="@id/secf_custom_uprof"
+                        android:text="Gate Pass No : "
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textSize="12dp"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sec_gpf_custom_Ugpno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginTop="64dp"
+                        android:layout_toEndOf="@+id/secf_custom_UsTime"
+                        android:layout_toRightOf="@id/sec_gpf_custom_Ugpno"
+                        android:text="Veh No"
+                        android:textColor="#ED1860"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textSize="12dp"
+                        android:textStyle="bold|italic" />
+
+
+
+
+
+
+                    <ImageView
+                        android:id="@+id/sec_gpf_Ustatus"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginEnd="27dp"
+                        android:src="@drawable/pending"
+                        android:text="Veh No"
+                        android:layout_centerVertical="true"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/custom_deletebtn_worker"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/ic_baseline_delete_forever_24"
+                        android:padding="7dp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+            </FrameLayout>
+        </com.ramotion.foldingcell.FoldingCell>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

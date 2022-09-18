@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="SomeThing Went Wrong !"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dialogReasn1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:layout_marginTop="20dp"
+        android:text="msg --- Zooooooooom IMG"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Your Request To Use this App is Rejected By Higher Authority.So As Per Our App T&amp;C Your Data Will be Deleted From Our System With Full Security in Next 48 Hours."
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+</LinearLayout>

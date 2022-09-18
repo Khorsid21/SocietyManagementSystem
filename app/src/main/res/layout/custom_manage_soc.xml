@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+
+        <com.ramotion.foldingcell.FoldingCell
+            android:id="@+id/folding_cell_add_emgnno_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/tvWorkerEmail"
+                        android:textSize="18dp"
+                        android:layout_marginEnd="8dp"
+
+                        android:layout_marginStart="5dp"
+                        android:text="City :"
+                        android:paddingStart="16dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+
+                        android:id="@+id/edCname"
+                        android:textSize="18dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Email :"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:layout_alignParentEnd="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/md_black_1000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_marginEnd="8dp"
+                        android:visibility="gone"
+                        android:layout_below="@id/tvWorkerEmail"
+                        android:layout_marginStart="5dp"
+                        android:id="@+id/tvaddEmgnNoBloodType"
+                        android:text="Blood Type :"
+                        android:paddingStart="16dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+
+                        android:id="@+id/tvaddEmgnNoBlood"
+                        android:textSize="18dp"
+                        android:visibility="gone"
+                        android:layout_marginEnd="8dp"
+                        android:layout_below="@id/edCname"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Speciality"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:layout_alignParentEnd="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/md_black_1000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_below="@id/tvaddEmgnNoBlood"
+                        android:layout_marginStart="5dp"
+                        android:text="Society Name :"
+                        android:paddingStart="16dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+
+
+                        android:id="@+id/edsocname"
+                        android:textSize="18dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_below="@id/tvaddEmgnNoBlood"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:text="8446613467"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:layout_alignParentEnd="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/md_black_1000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_below="@id/edsocname"
+                        android:layout_marginStart="5dp"
+                        android:text="Block/Wing :"
+                        android:paddingStart="16dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+
+                        android:id="@+id/edblkname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/edsocname"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="7dp"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="Hadapsar"
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/MSdeleteCalcel"
+                        android:layout_width="45dp"
+                        android:visibility="gone"
+                        android:layout_height="45dp"
+                        android:layout_below="@+id/edblkname"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="23dp"
+                        android:src="@drawable/wrong" />
+
+                    <ImageView
+                        android:id="@+id/MSdelete"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_below="@+id/edblkname"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="23dp"
+                        android:src="@drawable/ic_baseline_delete_forever" />
+
+                    <ImageView
+                        android:id="@+id/MSEdit"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_below="@+id/edblkname"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="80dp"
+                        android:src="@drawable/edit" />
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/MSdeleteDone"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_below="@+id/edblkname"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="80dp"
+                        android:src="@drawable/check" />
+
+                </RelativeLayout>
+
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:background="@drawable/bg_adapter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    android:layout_marginBottom="-5dp"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/custom_prof_emgnno"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/example_img"
+                        android:layout_marginStart="10dp" />
+
+                    <TextView
+                        android:id="@+id/custom_name_emgnno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_toRightOf="@id/custom_prof_emgnno"
+                        android:text="Item - 1"
+                        android:textSize="20dp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/custom_type_emgnno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/custom_name_emgnno"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="15dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_toRightOf="@id/custom_prof_emgnno"
+                        android:text="Description"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/custom_type_emgnno"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_toRightOf="@id/custom_prof_emgnno"
+                        android:background="#0C5ED1"
+                        android:paddingLeft="15dp"
+                        android:textSize="12dp"
+                        android:layout_marginStart="12dp"
+                        android:paddingRight="15dp"
+                        android:text="Rating Coming Soon"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/custom_deletebtn_emgnno"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/ic_baseline_delete_forever_24"
+                        android:padding="7dp" />
+
+                </RelativeLayout>
+            </FrameLayout>
+        </com.ramotion.foldingcell.FoldingCell>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
